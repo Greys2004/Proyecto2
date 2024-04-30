@@ -1,0 +1,156 @@
+<html>
+<head>
+	<script>
+		function mostrarAlerta() {
+            document.getElementById("miModal").style.display = "block";
+        }
+
+        function cerrarAlerta() {
+            document.getElementById("miModal").style.display = "none";
+        }
+	</script>
+<title>Almanza_Greys_Proyecto_Calificaciones</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Save for Web Styles (Almanza_Greys_Proyecto_Calificaciones.psd - Slices: 02, 05, 09) -->
+<style type="text/css">
+<!--
+
+#Tabla_01 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:1080px;
+	height:2233px;
+}
+
+#Almanza-Greys-Proyecto-Calificaciones-02 {
+	position:absolute;
+	left:943px;
+	top:0px;
+	width:137px;
+	height:135px;
+}
+
+#Almanza-Greys-Proyecto-Calificaciones-05 {
+	position:absolute;
+	left:675px;
+	top:1076px;
+	width:270px;
+	height:77px;
+}
+
+#Almanza-Greys-Proyecto-Calificaciones-09 {
+	position:absolute;
+	left:673px;
+	top:2114px;
+	width:272px;
+	height:77px;
+}
+
+#Almanza-Greys-Proyecto-CalificacionesFondo {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:1080px;
+	height:2233px;
+}
+.contenedor {
+	overflow: hidden;
+}
+
+.imagen {
+	transition: transform 0.3s ease;
+}
+
+.contenedor:hover .imagen {
+	-webkit-transform: scale(1.3);
+	transform: scale(0.8);
+}
+
+.imagen:hover {
+	filter: grayscale(80%);
+	filter: blur(5px);
+}
+
+.contenedor2 {
+	overflow: hidden;
+}
+
+.imagen2 {
+	transition: transform 0.3s ease;
+}
+
+.contenedor2:hover .imagen2 {
+	-webkit-transform: scale(1.3);
+	transform: scale(0.8);
+}
+
+.modal {
+	display: none; /* Ocultar el modal por defecto */
+	position: fixed; /* Posición fija */
+	z-index: 1; /* Colocar el modal por encima de todo */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto; /* Permitir desplazamiento si el contenido del modal es demasiado grande */
+	background-color: rgba(0,0,0,0.4); /* Fondo oscuro translúcido */
+}
+
+.modal-content {
+	background-color: #efafe8;
+	margin: 15% auto; /* 15% de la parte superior */
+	padding: 20px;
+	border: 1px solid #8b315e;
+	width: 80%;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	position: relative;
+}
+
+.cerrar {
+	color: #153b70;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+-->
+</style>
+<!-- End Save for Web Styles -->
+</head>
+<body id="Almanza-Greys-Proyecto-CalificacionesFondo" style="background-color:#FFFFFF; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;">
+<!-- Save for Web Slices (Almanza_Greys_Proyecto_Calificaciones.psd - Slices: 02, 05, 09) -->
+<img src="images/Almanza_Greys_Proyecto_CalificacionesFondo.png" width="1080" height="2233" alt="">
+<div id="Tabla_01">
+	<div class="contenedor" id="Almanza-Greys-Proyecto-Calificaciones-02">
+		<a href="Almanza_Greys_Proyecto_PaginaAlumnos.html">
+			<img src="images/Almanza_Greys_Proyecto_Calificaciones_02.png" width="137" height="135" alt="" class="imagen">
+		</a>
+	</div>
+	<div class="contenedor2" id="Almanza-Greys-Proyecto-Calificaciones-05">
+		<img src="images/Almanza_Greys_Proyecto_Calificaciones_05.png" width="270" height="77" alt="" class="imagen2" onclick="mostrarAlerta()">
+	</div>
+
+	<div class="contenedor2" id="Almanza-Greys-Proyecto-Calificaciones-09">
+		<img src="images/Almanza_Greys_Proyecto_Calificaciones_09.png" width="272" height="77" alt="" class="imagen2" onclick="mostrarAlerta()">
+	</div>
+
+	<div id="miModal" class="modal">
+		<div class="modal-content">
+			<span class="cerrar" onclick="cerrarAlerta()">&times;</span>
+			<p>¡Se ha mandado a imprimir!</p>
+		</div>
+	</div>
+
+	
+</div>
+<!-- End Save for Web Slices -->
+</body>
+</html>
